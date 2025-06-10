@@ -37,6 +37,9 @@ TCMODE ?= "emlinux"
 # from Debian apt repository.
 INHERIT += "debian-source"
 
+# Extend cve-check.bbclass processing.
+INHERIT += "cve-check-ext-emlinux"
+
 QEMU_TARGETS ?= "arm aarch64 i386 x86_64"
 
 PREMIRRORS ??= "\
